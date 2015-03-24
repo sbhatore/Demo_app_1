@@ -1,0 +1,9 @@
+<h1>Add</h1>
+
+<form action = "added"  method="get">
+  input: <input type="number" name="input"><br>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Submit">
+</form>
+
+<%= link_to "append", action: "new" %>

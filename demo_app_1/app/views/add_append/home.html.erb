@@ -1,0 +1,11 @@
+<h1>
+	Home
+</h1>
+
+<b><h3>This application demonstrates the need for purpose parameter in Rails</h3></b><br>
+<p>The actions for appending in controller "add_append" appends all the input numbers that client has given till now in "append" page, and stores the result in the form of a cookie named "appended". This appended cookie is <b>signed</b> using cookies.signed method.   </p><br>
+
+<p>Similarly, actions for adding in controller "add_append" adds all the input numbers that client has given till now in "add" page, and stores the final result in the form of a cookie named "added". This added cookie is also <b>signed</b> using cookies.signed method. </p>
+
+<%= link_to "Add", action: "add"%>
+<%= link_to "Append", action: "append"%>
