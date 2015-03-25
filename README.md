@@ -2,7 +2,7 @@
 **Developer : Siddharth Bhatore **
 
 ###Description
-Application demonstrating the problem in the Rails cookie system and the need for purpose parameter and signed expiry and purpose to resolve it.
+Application demonstrating the problem in the Rails cookie system and the need for purpose parameter and signed expiry to resolve it.
 
 Rails : **4.2.0** Ruby: **2.1.2**
 ###What application does
