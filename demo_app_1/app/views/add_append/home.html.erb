@@ -2,10 +2,17 @@
 	Home
 </h1>
 
-<b><h3>This application demonstrates the need for purpose parameter in Rails</h3></b><br>
-<p>The actions for appending in controller "add_append" appends all the input numbers that client has given till now in "append" page, and stores the result in the form of a cookie named "appended". This appended cookie is <b>signed</b> using cookies.signed method.   </p><br>
-
+<b><h3>This application demonstrates the need for purpose parameter in Rails</h3></b>
+<p>The actions for appending in controller "add_append" appends all the input numbers that client has given till now in "append" page, and stores the result in the form of a cookie named "appended". This appended cookie is <b>signed</b> using cookies.signed method.   </p>
 <p>Similarly, actions for adding in controller "add_append" adds all the input numbers that client has given till now in "add" page, and stores the final result in the form of a cookie named "added". This added cookie is also <b>signed</b> using cookies.signed method. </p>
 
+<p>The actions for appending in controller "add_append_secure" appends all the input numbers that client has given till now in "Append Secure" page, and stores the result in the form of a cookie named "appended_secure". This appended_secure cookie is <b>signed</b> using cookies.signed method but with a little modification. Now the purpose of this page "Append" is also signed along with the final result. So, appended result "1234" will be stored as "1234.Append" in the cookie  </p>
+<p>Similarly, actions for adding in controller "add_append_secure" adds all the input numbers that client has given till now in "Add Secure" page, and stores the final result in the form of a cookie named "added_secure". This added_secue cookie is also <b>signed</b> using cookies.signed method but with a little modification. Now, the purpose of this page "Add" is also signed along with the final result. So, "1234" will be stored in cookie as "1234.Add". </p>
+
+
+
 <%= link_to "Add", action: "add"%>
-<%= link_to "Append", action: "append"%>
+<%= link_to "Append", action: "append"%><br>
+
+<%= link_to "Append Secure", controller: "add_append_secure", action: "append"%>
+<%= link_to "Add Secure", controller: "add_append_secure", action: "add"%>

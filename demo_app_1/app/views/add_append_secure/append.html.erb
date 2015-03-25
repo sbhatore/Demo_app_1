@@ -1,0 +1,25 @@
+ <%=link_to "Home", controller: "add_append", action: "home"%>
+ <h1>Append Secure</h1>
+<h3>Anthing you input here will be appended to the the numbers that you previously input here till now.</h3>
+ <form action = "view_appended"  method="get">
+  input: <input type="number" name="input"><br>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Submit">
+</form>
+<i>
+
+<%= link_to "Add_Secure", action: "add" %>
+
+
+</i>
+
+<b>
+
+
+</b>
+
+
+
+
+
+

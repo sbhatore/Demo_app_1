@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
      root 'add_append#home'
      get 'add_append/append'
+     get 'add_append_secure/append'
+     get 'add_append_secure/view_appended'
+     get 'add_append_secure/add'
+     get 'add_append_secure/view_added'
 
   # Example of regular route:
      get 'add_append/add'
